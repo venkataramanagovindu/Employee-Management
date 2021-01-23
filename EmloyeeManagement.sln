@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmloyeeManagement", "EmloyeeManagement\EmloyeeManagement.csproj", "{A7AE8620-7A27-455C-B905-8EE5DB239F52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{4B3672F0-C416-4487-B3AE-2C82830906AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Repository", "EmployeeManagement.Repository\EmployeeManagement.Repository.csproj", "{8479799D-8F6B-4A9E-ABCA-5AEFAC241996}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{D3A4C28C-E47D-4267-BC21-AECF48222FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.Models", "EmployeeManagement.Models\EmployeeManagement.Models.csproj", "{2F93EF3B-127D-453C-973F-E3B01A8688B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.IRepository", "EmployeeManagement.IRepository\EmployeeManagement.IRepository.csproj", "{988E3FDE-DBA4-4309-B31F-E69D2ADF9D78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7AE8620-7A27-455C-B905-8EE5DB239F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AE8620-7A27-455C-B905-8EE5DB239F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AE8620-7A27-455C-B905-8EE5DB239F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AE8620-7A27-455C-B905-8EE5DB239F52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8479799D-8F6B-4A9E-ABCA-5AEFAC241996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8479799D-8F6B-4A9E-ABCA-5AEFAC241996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8479799D-8F6B-4A9E-ABCA-5AEFAC241996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8479799D-8F6B-4A9E-ABCA-5AEFAC241996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F93EF3B-127D-453C-973F-E3B01A8688B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F93EF3B-127D-453C-973F-E3B01A8688B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F93EF3B-127D-453C-973F-E3B01A8688B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F93EF3B-127D-453C-973F-E3B01A8688B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{988E3FDE-DBA4-4309-B31F-E69D2ADF9D78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{988E3FDE-DBA4-4309-B31F-E69D2ADF9D78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{988E3FDE-DBA4-4309-B31F-E69D2ADF9D78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{988E3FDE-DBA4-4309-B31F-E69D2ADF9D78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8479799D-8F6B-4A9E-ABCA-5AEFAC241996} = {4B3672F0-C416-4487-B3AE-2C82830906AD}
+		{2F93EF3B-127D-453C-973F-E3B01A8688B7} = {D3A4C28C-E47D-4267-BC21-AECF48222FE0}
+		{988E3FDE-DBA4-4309-B31F-E69D2ADF9D78} = {4B3672F0-C416-4487-B3AE-2C82830906AD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D06034F2-AC3B-483A-A21D-DC84802497CB}
+	EndGlobalSection
+EndGlobal
