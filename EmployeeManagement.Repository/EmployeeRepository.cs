@@ -35,7 +35,6 @@ namespace EmployeeManagement.Repository
             {
                 Employees[index] = employee;
             }
-            return Employees[index];
         }
 
         public List<Employee> DeleteEmployee(int id)

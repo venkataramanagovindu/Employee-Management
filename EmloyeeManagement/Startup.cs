@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Net.Http.Headers;
 
 using EmployeeManagement.IRepository;
+using EmployeeManagement.Models.Common;
 using EmployeeManagement.Repository;
+
 
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,8 +39,19 @@ namespace EmloyeeManagement
             {
                 builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
             }));
+
             //DI
             services.AddSingleton<IEmployeeRepository, EmployeeRepository>();
+            services.AddSingleton<IHTTP, HttpService>();
+
+            services.AddMvc().AddNewtonsoftJson();
+
+            services.AddHttpClient(Constants.SENDGRID_API, async client =>
+            {
+                client.BaseAddress = new Uri(Configuration[Constants.SENDGRID_API_URI]);
+                client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/json"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
